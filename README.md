@@ -2,7 +2,7 @@
 
 <!-- INTRO:START -->
 <p align="center">
-  <img src="preview/preview_v2025.0116.png" alt="AxlRose's WIP (Incomplete)">
+  <img src="preview/preview_v2025.0117.png" alt="AxlRose's WIP (Incomplete)">
 </p>
 
 Work in Progress mod, requires to be manually set at the top of your
@@ -12,12 +12,12 @@ mod's list and includes:
 - Few field character textures
 - Other parts are coming soon
 
-## Latest release: v2025.0116
+## Latest release: v2025.0117
 
 ```
-v2025.0116:
+v2025.0117:
   - Field backgrounds: bghoke_3, bghoke_2, bgroad_6,
-    bgroom_1, bg2f_2 and bg2f_1 (NEW)
+    bgroom_1, bg2f_2 and bg2f_1 (Fixed)
   - Squall's d000 and d001 field model (low and high poly model)
 ```
 <!-- INTRO:END -->
