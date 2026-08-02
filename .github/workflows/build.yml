@@ -76,3 +76,4 @@ jobs:
           GH_TOKEN: "${{ github.token }}"
           GH_REPO: "${{ github.repository }}"
         run: .github/workflows/prune.ps1
+
