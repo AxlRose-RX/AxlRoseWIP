@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModInfo>
+  <ID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ID>
+  <Name>AxlRose&apos;s WIP (Incomplete)</Name>
+  <Author>AxlRose</Author>
+  <Version>2025.0112</Version>
+  <ReleaseDate>2025-01-12</ReleaseDate>
+  <Category>Miscellaneous</Category>
+  <Description>
+- Work in progress
+- Use it above other mods
+- Few field upscaled backgrounds
+- Few field character textures
+- Other random parts of the game soon
+  </Description>
+  <ReleaseNotes>
+v2025.0112:
+  - Initial release version
+  - First 5 field backgrounds (bghoke_3, bghoke_2, bgroad_6, bgroom_1 and bg2f_2)
+  - Squall's d000 and d001 field model (low and high poly model)
+  </ReleaseNotes>
+  <Link>https://discord.com/invite/7Rsvsewghz</Link>
+  <DonationLink>https://www.paypal.com/donate/?hosted_button_id=FTA38UUZJ5QAN</DonationLink>
+  <PreviewFile>Preview\preview.png</PreviewFile>
+
+  <ModFolder Folder="No Change" ActiveWhen="FIELDSA_ID = 0" />
+  <ModFolder Folder="FIELD_BG" ActiveWhen="FIELDSA_ID = 1" />
+
+  <ModFolder Folder="No Change" ActiveWhen="POLY_ID = 0" />
+  <ModFolder Folder="FIELD_MODELS\HIGH_POLY" ActiveWhen="POLY_ID = 1" />
+  <ModFolder Folder="FIELD_MODELS\LOW_POLY" ActiveWhen="POLY_ID = 2" />
+
+  <ConfigOption>
+    <Type>Bool</Type>
+    <Default>1</Default>
+    <ID>FIELDSA_ID</ID>
+    <Name>Field - Backgrounds</Name>
+    <Description>Upscale of all Field backgrounds (Work in Progress)</Description>
+    <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
+    <Option Value="1" Name="On" PreviewFile="Preview\on.png"/>
+  </ConfigOption>
+
+  <ConfigOption>
+    <Type>List</Type>
+    <Default>2</Default>
+    <ID>POLY_ID</ID>
+    <Name>Field - Characters</Name>
+    <Description>Replace 3D models and textures (Work in Progress)</Description>
+    <Option Value="0" Name="0 - Off" PreviewFile="Preview\off.png"/>
+    <Option Value="1" Name="1 - High Poly models [Not recommend yet]" PreviewFile="Preview\high_poly.jpg"/>
+    <Option Value="2" Name="2 - Low Poly models (Default)" PreviewFile="Preview\low_poly.jpg"/>
+  </ConfigOption>
+
+</ModInfo>
