@@ -1,0 +1,11 @@
+# Build output
+.dist/
+
+# Never commit build artifacts, they are published as release assets
+*.iroj
+*.7z
+
+# Windows junk
+Thumbs.db
+desktop.ini
+ehthumbs.db

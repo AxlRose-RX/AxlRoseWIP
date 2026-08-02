@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Catalog-only fields. Everything else in catalog-mod.xml is read straight
+  out of src/mod.xml, so this is the only file to touch when the tag list
+  changes.
+-->
+<CatalogMeta>
+  <CompatibleGameVersions>All</CompatibleGameVersions>
+  <Tags>
+    <string>axlrose</string>
+    <string>tsunamods</string>
+    <string>backgrounds</string>
+    <string>ai</string>
+    <string>upscales</string>
+  </Tags>
+</CatalogMeta>

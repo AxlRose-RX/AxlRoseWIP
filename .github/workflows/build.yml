@@ -1,0 +1,78 @@
+name: AxlRoseWIP
+
+run-name: "Build (manual)"
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish a GitHub Release"
+        type: boolean
+        default: true
+      prune_old_releases:
+        description: "Delete previous releases, keeping only this one (off: every version is kept)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+env:
+  _RELEASE_NAME: AxlRoseWIP
+  # GIT: Fix reporting from stderr to stdout
+  GIT_REDIRECT_STDERR: "2>&1"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+      - name: Set Git config
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.filemode false
+          git config --global core.longpaths true
+
+      - name: Install iroga from crates.io
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: iroga
+          version: 0.4.0
+
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Prepare
+        shell: pwsh
+        run: .github/workflows/prepare.ps1
+
+      - name: Package
+        shell: pwsh
+        run: .github/workflows/package.ps1
+
+      - name: Commit versioned preview
+        if: ${{ inputs.publish }}
+        shell: pwsh
+        run: .github/workflows/commit-preview.ps1
+
+      - name: Publish release
+        if: ${{ inputs.publish }}
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: ".dist/AxlRoseWIP.7z,.dist/catalog-mod.xml"
+          tag: "${{ env._RELEASE_VERSION }}"
+          name: "${{ env._RELEASE_NAME }}-${{ env._RELEASE_VERSION }}"
+          bodyFile: ".dist/release-notes.md"
+          allowUpdates: true
+          removeArtifacts: true
+          makeLatest: true
+
+      - name: Prune old releases
+        if: ${{ inputs.publish && inputs.prune_old_releases }}
+        shell: pwsh
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          GH_REPO: "${{ github.repository }}"
+        run: .github/workflows/prune.ps1
