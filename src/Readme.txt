@@ -11,8 +11,11 @@
 **  Other parts are coming soon
 ********************************************************
 
+v2025.0117:
+  - Field: bg2f_1 (Fixed)
+
 v2025.0116:
-  - Field: bg2f_1
+  - Field: bg2f_1 (New)
 
 v2025.0112:
   - Initial release version
