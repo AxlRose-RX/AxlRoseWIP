@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Never touch line endings. Keeps every asset byte-identical and preserves
+# mod.xml exactly as authored, CRLF included.
+* -text
