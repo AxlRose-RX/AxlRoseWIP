@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModInfo>
   <ID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ID>
-  <Name>AxlRose&apos;s WIP (Incomplete)</Name>
+  <Name>AxlRose&apos;s WIP &#40;Incomplete&#41;</Name>
   <Author>AxlRose</Author>
-  <Version>2025.1201</Version>
+  <Version>2026.0326</Version>
   <ReleaseDate>2025-01-12</ReleaseDate>
   <Category>Miscellaneous</Category>
-  <Description> Work in Progress mod (manually set at the top of list)
-        - Few field upscaled backgrounds and field character textures
-        - Enhanced UI and Themes plus tons of new stuff
+  <Description> Work in Progress mod &#40;manually set at the top of list&#41;
+        &#45; Few field upscaled backgrounds and field character textures
+        &#45; Enhanced UI and Themes plus tons of new stuff
   </Description>
-  <ReleaseNotes>  v2025.1201 &gt; FIELD BACKGROUNDS!:
-      - Developing an app to automate the vectorization of clean layer masks for cutting
-      the field background textures to then import them into the game. The result: 14
-      custom upscales (some 6x, some 8x) ready - 11 from Balamb Garden and 3 from Ifrit's
-      Cave - plus 40 4x faithful upscaled backgrounds including the whole Balamb Town and
-      Ifrit's Cave.
-  UI:
-      - Replaced Remaster fonts with perfect monospaced fonts - New Avatar pack options 
-      (JamesTheCat and AxlRose) - New Start Screen options (AxlRose or Vanilla) - New cursor
-      options (Gunblade or Hand) - New option for controller buttons (Keyboard, PlayStation
-      or XBox) - Enhanced UI and Themes: Blue Gradient, FF9 Blue, FF9 Black, Vanilla, Purpur
+  <ReleaseNotes>  v2026.0326 &gt; FIELD BACKGROUNDS!&#58;
+      &#45; 4x Upscales&#58; 80&#47;950
+      &#45; Custom&#58; 20&#47;950
+  UI&#58;
+      &#45; Replaced Remaster fonts with perfect monospaced fonts &#45; New Avatar pack options 
+      &#40;JamesTheCat and AxlRose&#41; &#45; New Start Screen options &#40;AxlRose or Vanilla&#41; &#45; New cursor
+      options &#40;Gunblade or Hand&#41; &#45; New option for controller buttons &#40;Keyboard, PlayStation
+      or XBox&#41; &#45; Enhanced UI and Themes&#58; Blue Gradient, FF9 Blue, FF9 Black, Vanilla, Purpur
       and Light Purple are NEW
-  Field character models:
-      - Squall&apos;s d000 and d001 field model (low/high poly model) but then removed 
-      the High Poly field models (until fully supported by the engine to prevent crashes
-      and artifacts)
+  Field character models&#58;
+      &#45; Squall&apos;s d000 and d001 field model &#40;low/high poly model&#41; but then removed 
+      the High Poly field models &#40;until fully supported by the engine to prevent crashes
+      and artifacts&#41;
   </ReleaseNotes>
   <Link>https://discord.com/invite/7Rsvsewghz</Link>
   <DonationLink>https://www.paypal.com/donate/?hosted_button_id=FTA38UUZJ5QAN</DonationLink>
@@ -36,17 +33,96 @@
     <Forbid ModID="44a6896d-96ce-493f-bbb3-35bd29dcf205">Menu Plus</Forbid>
     <Forbid ModID="e9028780-2cb5-44b5-962d-342a9206cc1e">XBOX-BUTTONS</Forbid>
     <Forbid ModID="7a3c8d1f-4e6b-4a9c-b123-8f9e4d2c7a1b">andr33ww - Glacial Eyedrop</Forbid>
-    <Forbid ModID="46866fd5-ce34-43f7-b304-a421a9044f93">SeeD Reborn Plus</Forbid>    
+    
+    <!-- AxlRose UI_ID On - SeedReborn Off -->
+    <Setting>
+      <MyID>UI_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>46866fd5-ce34-43f7-b304-a421a9044f93</ModID>
+      <TheirID>seedreborn_ID</TheirID>
+      <Require>0</Require>
+    </Setting>
+
+    <!-- AxlRose UI_ID On - SeedReborn Off -->
+    <Setting>
+      <MyID>UI_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>46866fd5-ce34-43f7-b304-a421a9044f93</ModID>
+      <TheirID>title_ID</TheirID>
+      <Require>0</Require>
+    </Setting>
+
+    <!-- AxlRose UI_ID On - SeedReborn Off -->
+    <Setting>
+      <MyID>UI_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>46866fd5-ce34-43f7-b304-a421a9044f93</ModID>
+      <TheirID>gunblade_ID</TheirID>
+      <Require>0</Require>
+    </Setting>
+
+    <!-- AxlRose UI_ID On - SeedReborn Off -->
+    <Setting>
+      <MyID>UI_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>46866fd5-ce34-43f7-b304-a421a9044f93</ModID>
+      <TheirID>text_ID</TheirID>
+      <Require>0</Require>
+    </Setting>
+
+    <!-- AxlRose UI_ID On - SeedReborn Off -->
+    <Setting>
+      <MyID>UI_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>46866fd5-ce34-43f7-b304-a421a9044f93</ModID>
+      <TheirID>status_ID</TheirID>
+      <Require>0</Require>
+    </Setting>
+
+    <!-- AxlRose UI_ID On - SeedReborn Off -->
+    <Setting>
+      <MyID>UI_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>46866fd5-ce34-43f7-b304-a421a9044f93</ModID>
+      <TheirID>test_ID</TheirID>
+      <Require>0</Require>
+    </Setting>
+
+    <!--  AxlRose Field - Custom Backgrounds On
+          Field - 4x SHARP Upscale Backgrounds 
+    -->
+    <Setting>
+      <MyID>FIELDSA_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ModID>
+      <TheirID>FIELDS4X_ID</TheirID>
+      <Require>1</Require>
+    </Setting>
+
+    <!--  AxlRose Field - 4x SHARP Upscale Backgrounds
+          Field - 4x RAW Upscale Backgrounds 
+    -->
+    <Setting>
+      <MyID>FIELDS4X_ID</MyID>
+      <MyValue>1</MyValue>
+      <ModID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ModID>
+      <TheirID>FIELDSB_ID</TheirID>
+      <Require>1</Require>
+    </Setting>
+
   </Compatibility>
 
   <ModFolder Folder="No Change" ActiveWhen="FIELDSA_ID = 0" />
   <ModFolder Folder="_FBG_CUSTOM" ActiveWhen="FIELDSA_ID = 1" />
 
+  <ModFolder Folder="No Change" ActiveWhen="FIELDS4X_ID = 0" />
+  <ModFolder Folder="_FBG_4XSHARP" ActiveWhen="FIELDS4X_ID = 1" />
+
   <ModFolder Folder="No Change" ActiveWhen="FIELDSB_ID = 0" />
-  <ModFolder Folder="_FBG_FAITHFUL" ActiveWhen="FIELDSB_ID = 1" />
+  <ModFolder Folder="_FBG_4XRAW" ActiveWhen="FIELDSB_ID = 1" />
 
   <ModFolder Folder="No Change" ActiveWhen="POLY_ID = 0" />
-  <ModFolder Folder="FIELD_MODELS\LOW_POLY" ActiveWhen="POLY_ID = 1" />
+  <ModFolder Folder="FIELD_MODELS\HIGH_POLY" ActiveWhen="POLY_ID = 1" />
   <ModFolder Folder="FIELD_MODELS\LOW_POLY" ActiveWhen="POLY_ID = 2" />
 
   <ModFolder Folder="No Change" ActiveWhen="UI_ID = 0" />
@@ -582,27 +658,38 @@
     <Option Value="1" Name="On" PreviewFile="Preview\field_bg_custom.png"/>
   </ConfigOption>
 
+<!-- Field Backgrounds - 4X Faithful - Sharp Pass -->
+  <ConfigOption>
+    <Type>Bool</Type>
+    <Default>1</Default>
+    <ID>FIELDS4X_ID</ID>
+    <Name>Field - 4x SHARP Upscale Backgrounds</Name>
+    <Description>4x faithful SHARP upscale Field backgrounds (Work in Progress)</Description>
+    <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
+    <Option Value="1" Name="On" PreviewFile="Preview\field_bg_sharp.png"/>
+  </ConfigOption>
+
 <!-- Field Backgrounds - Faithful -->
   <ConfigOption>
     <Type>Bool</Type>
     <Default>1</Default>
     <ID>FIELDSB_ID</ID>
-    <Name>Field - Faithful Backgrounds</Name>
-    <Description>4x faithful upscale Field backgrounds (Work in Progress)</Description>
+    <Name>Field - 4x RAW Upscale Backgrounds</Name>
+    <Description>4x faithful RAW upscale Field backgrounds (Work in Progress)</Description>
     <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
-    <Option Value="1" Name="On" PreviewFile="Preview\field_bg_faithful.png"/>
+    <Option Value="1" Name="On" PreviewFile="Preview\field_bg_raw.png"/>
   </ConfigOption>
 
 <!-- Field - Characters -->
   <ConfigOption>
     <Type>List</Type>
-    <Default>2</Default>
+    <Default>1</Default>
     <ID>POLY_ID</ID>
     <Name>Field - Characters</Name>
     <Description>Replace 3D models and textures (Work in Progress)</Description>
     <Option Value="0" Name="0 - Off" PreviewFile="Preview\off.png"/>
-    <Option Value="1" Name="1 - Low Poly models" PreviewFile="Preview\low_poly.jpg"/>
-    <Option Value="2" Name="2 - Low Poly models (Default)" PreviewFile="Preview\low_poly.jpg"/>
+    <Option Value="1" Name="1 - High Poly models (Default)" PreviewFile="Preview\high_poly.jpg"/>
+    <Option Value="2" Name="2 - Low Poly models" PreviewFile="Preview\low_poly.jpg"/>
   </ConfigOption>
 
 <!-- UI -->

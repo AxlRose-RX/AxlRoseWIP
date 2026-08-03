@@ -12,6 +12,10 @@
 **  Other parts are coming soon
 ********************************************************
 
+v2026.0326:
+
+  - 40 plus Balamb Garden field backgrounds
+
 v2025.1201:
   - Developing an app to automate the vectorization of clean
   layer masks for cutting the field background textures to 
