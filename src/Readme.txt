@@ -12,6 +12,10 @@
 **  Other parts are coming soon
 ********************************************************
 
+v2026.0329:
+
+  - Minor clean up
+
 v2026.0326:
 
   - 40 plus Balamb Garden field backgrounds

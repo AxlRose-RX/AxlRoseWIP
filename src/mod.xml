@@ -3,14 +3,14 @@
   <ID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ID>
   <Name>AxlRose&apos;s WIP &#40;Incomplete&#41;</Name>
   <Author>AxlRose</Author>
-  <Version>2026.0326</Version>
+  <Version>2026.0329</Version>
   <ReleaseDate>2025-01-12</ReleaseDate>
   <Category>Miscellaneous</Category>
   <Description> Work in Progress mod &#40;manually set at the top of list&#41;
         &#45; Few field upscaled backgrounds and field character textures
         &#45; Enhanced UI and Themes plus tons of new stuff
   </Description>
-  <ReleaseNotes>  v2026.0326 &gt; FIELD BACKGROUNDS!&#58;
+  <ReleaseNotes>  v2026.0329 &gt; FIELD BACKGROUNDS!&#58;
       &#45; 4x Upscales&#58; 80&#47;950
       &#45; Custom&#58; 20&#47;950
   UI&#58;
@@ -99,17 +99,6 @@
       <Require>1</Require>
     </Setting>
 
-    <!--  AxlRose Field - 4x SHARP Upscale Backgrounds
-          Field - 4x RAW Upscale Backgrounds 
-    -->
-    <Setting>
-      <MyID>FIELDS4X_ID</MyID>
-      <MyValue>1</MyValue>
-      <ModID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ModID>
-      <TheirID>FIELDSB_ID</TheirID>
-      <Require>1</Require>
-    </Setting>
-
   </Compatibility>
 
   <ModFolder Folder="No Change" ActiveWhen="FIELDSA_ID = 0" />
@@ -117,9 +106,6 @@
 
   <ModFolder Folder="No Change" ActiveWhen="FIELDS4X_ID = 0" />
   <ModFolder Folder="_FBG_4XSHARP" ActiveWhen="FIELDS4X_ID = 1" />
-
-  <ModFolder Folder="No Change" ActiveWhen="FIELDSB_ID = 0" />
-  <ModFolder Folder="_FBG_4XRAW" ActiveWhen="FIELDSB_ID = 1" />
 
   <ModFolder Folder="No Change" ActiveWhen="POLY_ID = 0" />
   <ModFolder Folder="FIELD_MODELS\HIGH_POLY" ActiveWhen="POLY_ID = 1" />
@@ -669,17 +655,6 @@
     <Option Value="1" Name="On" PreviewFile="Preview\field_bg_sharp.png"/>
   </ConfigOption>
 
-<!-- Field Backgrounds - Faithful -->
-  <ConfigOption>
-    <Type>Bool</Type>
-    <Default>1</Default>
-    <ID>FIELDSB_ID</ID>
-    <Name>Field - 4x RAW Upscale Backgrounds</Name>
-    <Description>4x faithful RAW upscale Field backgrounds (Work in Progress)</Description>
-    <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
-    <Option Value="1" Name="On" PreviewFile="Preview\field_bg_raw.png"/>
-  </ConfigOption>
-
 <!-- Field - Characters -->
   <ConfigOption>
     <Type>List</Type>
@@ -755,12 +730,12 @@
 <!-- UI - Game Controllers -->
   <ConfigOption>
     <Type>List</Type>
-    <Default>0</Default>
+    <Default>1</Default>
     <ID>UI_Controller_ID</ID>
     <Name>UI - Game Controllers</Name>
     <Description>UI - Game Controllers (If no controller, defauls to keyboard icons)</Description>
-    <Option Value="0" Name="0. Off (Default)" PreviewFile="Preview\UI_Keyboard.jpg"/>
-    <Option Value="1" Name="1. Playstation" PreviewFile="Preview\UI_Playstation.jpg"/>
+    <Option Value="0" Name="0. Off" PreviewFile="Preview\UI_Keyboard.jpg"/>
+    <Option Value="1" Name="1. Playstation (Default)" PreviewFile="Preview\UI_Playstation.jpg"/>
     <Option Value="2" Name="2. XBox" PreviewFile="Preview\UI_XBox.jpg"/>
   </ConfigOption>
 
@@ -782,9 +757,9 @@
     <ff8_use_gamepad_icons UI_Controller_ID="2" UI_ID="1">true</ff8_use_gamepad_icons>
     
     <internal_resolution_scale FIELDSA_ID="1">4</internal_resolution_scale>
-    <internal_resolution_scale FIELDSB_ID="1">4</internal_resolution_scale>
-    <enable_bilinear FIELDSB_ID="1">true</enable_bilinear>
-    <enable_bilinear FIELDSB_ID="1">true</enable_bilinear>
+    <internal_resolution_scale FIELDS4X_ID="1">4</internal_resolution_scale>
+    <enable_bilinear FIELDSA_ID="1">true</enable_bilinear>
+    <enable_bilinear FIELDS4X_ID="1">true</enable_bilinear>
   </FFNxConfig>
 
 </ModInfo>
