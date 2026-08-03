@@ -2,7 +2,7 @@
 
 <!-- INTRO:START -->
 <p align="center">
-  <img src="preview/preview_v2026.0329.png" alt="AxlRose's WIP (Incomplete)">
+  <img src="preview/preview_v2026.0705.png" alt="AxlRose's WIP (Incomplete)">
 </p>
 
 Work in Progress mod (manually set at the top of list)
@@ -10,22 +10,22 @@ Work in Progress mod (manually set at the top of list)
 - Few field upscaled backgrounds and field character textures
 - Enhanced UI and Themes plus tons of new stuff
 
-## Latest release: v2026.0329
+## Latest release: v2026.0705
 
 ```
-v2026.0329 > FIELD BACKGROUNDS!:
-      - 4x Upscales: 80/950
-      - Custom: 20/950
+v2026.0705 > FIELD BACKGROUNDS!:
+      - 4x Upscales: 157/877 (Balamb Garden COMPLETE)
+      - Custom: 20/877
+
   UI:
       - Replaced Remaster fonts with perfect monospaced fonts - New Avatar pack options
       (JamesTheCat and AxlRose) - New Start Screen options (AxlRose or Vanilla) - New cursor
       options (Gunblade or Hand) - New option for controller buttons (Keyboard, PlayStation
       or XBox) - Enhanced UI and Themes: Blue Gradient, FF9 Blue, FF9 Black, Vanilla, Purpur
       and Light Purple are NEW
+
   Field character models:
-      - Squall's d000 and d001 field model (low/high poly model) but then removed
-      the High Poly field models (until fully supported by the engine to prevent crashes
-      and artifacts)
+      - Squall's d000 and d001 field model (low/high poly model)
 ```
 <!-- INTRO:END -->
 
