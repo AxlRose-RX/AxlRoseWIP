@@ -2,23 +2,26 @@
 
 <!-- INTRO:START -->
 <p align="center">
-  <img src="preview/preview_v2025.0120.png" alt="AxlRose's WIP (Incomplete)">
+  <img src="preview/preview_v2025.0222.png" alt="AxlRose's WIP (Incomplete)">
 </p>
 
-Work in Progress mod, requires to be manually set at the top of your
-mod's list and includes:
+Work in Progress mod (manually set at the top of list)
 
-- Few field upscaled backgrounds
-- Few field character textures
-- Enhanced UI and UI Themes
-- Other parts are coming soon
+- Few field upscaled backgrounds and field character textures
+- Enhanced UI and Themes plus tons of new stuff
 
-## Latest release: v2025.0120
+## Latest release: v2025.0222
 
 ```
-v2025.0120:
-  - Enhanced UI and UI Themes (UI_Blue_Gradient, UI_FF9_Blue,
-    UI_FF9_Black, UI_FF8_Vanilla)
+v2022.0222:
+  - Smooth font borders for all Themes
+  - New Avatar pack options (JamesTheCat and AxlRose)
+  - New Start Screen options (AxlRose or Vanilla)
+  - New cursor options (Gunblade or Hand)
+  - New option for controller buttons (Keyboard,
+  PlayStation or XBox)
+  - Enhanced UI and Themes: Blue Gradient, FF9 Blue,
+    FF9 Black, Vanilla, Purpur and Light Purple are NEW
   - Field backgrounds: bghoke_3, bghoke_2, bgroad_6,
     bgroom_1, bg2f_2 and bg2f_1 (Fixed)
   - Squall's d000 and d001 field model (low and high poly model)
