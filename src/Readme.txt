@@ -10,6 +10,10 @@
 **  
 **  Other parts are coming soon
 ********************************************************
+v2025.0820:
+  - Replaced Remaster fonts with perfect monospaced fonts
+  - Removed High Poly field models (until fully supported by 
+  the engine to prevent crashes and artifacts)
 
 v2025.0222:
   - Smooth font borders (blur) for all Themes

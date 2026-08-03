@@ -3,7 +3,7 @@
   <ID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ID>
   <Name>AxlRose&apos;s WIP (Incomplete)</Name>
   <Author>AxlRose</Author>
-  <Version>2025.0222</Version>
+  <Version>2025.0820</Version>
   <ReleaseDate>2025-01-12</ReleaseDate>
   <Category>Miscellaneous</Category>
   <Description>
@@ -13,8 +13,10 @@ Work in Progress mod (manually set at the top of list)
 - Enhanced UI and Themes plus tons of new stuff
   </Description>
   <ReleaseNotes>
-v2022.0222:
-  - Smooth font borders for all Themes
+v2025.0820:
+  - Replaced Remaster fonts with perfect monospaced fonts
+  - Removed High Poly field models (until fully supported by 
+  the engine to prevent crashes and artifacts)
   - New Avatar pack options (JamesTheCat and AxlRose)
   - New Start Screen options (AxlRose or Vanilla)
   - New cursor options (Gunblade or Hand)
@@ -24,7 +26,7 @@ v2022.0222:
     FF9 Black, Vanilla, Purpur and Light Purple are NEW
   - Field backgrounds: bghoke_3, bghoke_2, bgroad_6, 
     bgroom_1, bg2f_2 and bg2f_1 (Fixed)
-  - Squall&apos;s d000 and d001 field model (low and high poly model)
+  - Squall&apos;ss d000 and d001 field model (low poly model)
   </ReleaseNotes>
   <Link>https://discord.com/invite/7Rsvsewghz</Link>
   <DonationLink>https://www.paypal.com/donate/?hosted_button_id=FTA38UUZJ5QAN</DonationLink>
@@ -39,7 +41,7 @@ v2022.0222:
   <ModFolder Folder="FIELD_BG" ActiveWhen="FIELDSA_ID = 1" />
 
   <ModFolder Folder="No Change" ActiveWhen="POLY_ID = 0" />
-  <ModFolder Folder="FIELD_MODELS\HIGH_POLY" ActiveWhen="POLY_ID = 1" />
+  <ModFolder Folder="FIELD_MODELS\LOW_POLY" ActiveWhen="POLY_ID = 1" />
   <ModFolder Folder="FIELD_MODELS\LOW_POLY" ActiveWhen="POLY_ID = 2" />
 
   <ModFolder Folder="No Change" ActiveWhen="UI_ID = 0" />
@@ -552,6 +554,17 @@ v2022.0222:
 *****************************************
 ************************************* -->
 
+<!-- RECOMMENDED Settings -->
+	<ConfigOption>
+		<Type>List</Type>
+		<Default>0</Default>
+		<ID>Reco</ID>
+		<Name>RECOMMENDED Settings</Name>
+		<Description>Best Looking Experience, Prettify the Whole Game!</Description>
+		<Option Value="0" Name="Page - 1" PreviewFile="Preview\recommended2.png"/>
+    <Option Value="0" Name="Page - 2" PreviewFile="Preview\recommended.gif"/>
+	</ConfigOption>
+
 <!-- Field Backgrounds -->
   <ConfigOption>
     <Type>Bool</Type>
@@ -560,7 +573,7 @@ v2022.0222:
     <Name>Field - Backgrounds</Name>
     <Description>Upscale of all Field backgrounds (Work in Progress)</Description>
     <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
-    <Option Value="1" Name="On" PreviewFile="Preview\on.png"/>
+    <Option Value="1" Name="On" PreviewFile="Preview\fields_bg.jpg"/>
   </ConfigOption>
 
 <!-- Field - Characters -->
@@ -571,7 +584,7 @@ v2022.0222:
     <Name>Field - Characters</Name>
     <Description>Replace 3D models and textures (Work in Progress)</Description>
     <Option Value="0" Name="0 - Off" PreviewFile="Preview\off.png"/>
-    <Option Value="1" Name="1 - High Poly models [Not recommend yet]" PreviewFile="Preview\high_poly.jpg"/>
+    <Option Value="1" Name="1 - Low Poly models" PreviewFile="Preview\low_poly.jpg"/>
     <Option Value="2" Name="2 - Low Poly models (Default)" PreviewFile="Preview\low_poly.jpg"/>
   </ConfigOption>
 
