@@ -2,7 +2,7 @@
 
 <!-- INTRO:START -->
 <p align="center">
-  <img src="preview/preview_v2025.0222.png" alt="AxlRose's WIP (Incomplete)">
+  <img src="preview/preview_v2025.0820.png" alt="AxlRose's WIP (Incomplete)">
 </p>
 
 Work in Progress mod (manually set at the top of list)
@@ -10,11 +10,13 @@ Work in Progress mod (manually set at the top of list)
 - Few field upscaled backgrounds and field character textures
 - Enhanced UI and Themes plus tons of new stuff
 
-## Latest release: v2025.0222
+## Latest release: v2025.0820
 
 ```
-v2022.0222:
-  - Smooth font borders for all Themes
+v2025.0820:
+  - Replaced Remaster fonts with perfect monospaced fonts
+  - Removed High Poly field models (until fully supported by
+  the engine to prevent crashes and artifacts)
   - New Avatar pack options (JamesTheCat and AxlRose)
   - New Start Screen options (AxlRose or Vanilla)
   - New cursor options (Gunblade or Hand)
@@ -24,7 +26,7 @@ v2022.0222:
     FF9 Black, Vanilla, Purpur and Light Purple are NEW
   - Field backgrounds: bghoke_3, bghoke_2, bgroad_6,
     bgroom_1, bg2f_2 and bg2f_1 (Fixed)
-  - Squall's d000 and d001 field model (low and high poly model)
+  - Squall'ss d000 and d001 field model (low poly model)
 ```
 <!-- INTRO:END -->
 
