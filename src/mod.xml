@@ -3,25 +3,28 @@
   <ID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ID>
   <Name>AxlRose&apos;s WIP (Incomplete)</Name>
   <Author>AxlRose</Author>
-  <Version>2025.0120</Version>
+  <Version>2025.0222</Version>
   <ReleaseDate>2025-01-12</ReleaseDate>
   <Category>Miscellaneous</Category>
   <Description>
-Work in Progress mod, requires to be manually set at the top of your
-mod's list and includes:
+Work in Progress mod (manually set at the top of list)
 
-- Few field upscaled backgrounds
-- Few field character textures
-- Enhanced UI and UI Themes
-- Other parts are coming soon
+- Few field upscaled backgrounds and field character textures
+- Enhanced UI and Themes plus tons of new stuff
   </Description>
   <ReleaseNotes>
-v2025.0120:
-  - Enhanced UI and UI Themes (UI_Blue_Gradient, UI_FF9_Blue, 
-    UI_FF9_Black, UI_FF8_Vanilla)
+v2022.0222:
+  - Smooth font borders for all Themes
+  - New Avatar pack options (JamesTheCat and AxlRose)
+  - New Start Screen options (AxlRose or Vanilla)
+  - New cursor options (Gunblade or Hand)
+  - New option for controller buttons (Keyboard, 
+  PlayStation or XBox)
+  - Enhanced UI and Themes: Blue Gradient, FF9 Blue, 
+    FF9 Black, Vanilla, Purpur and Light Purple are NEW
   - Field backgrounds: bghoke_3, bghoke_2, bgroad_6, 
     bgroom_1, bg2f_2 and bg2f_1 (Fixed)
-  - Squall's d000 and d001 field model (low and high poly model)
+  - Squall&apos;s d000 and d001 field model (low and high poly model)
   </ReleaseNotes>
   <Link>https://discord.com/invite/7Rsvsewghz</Link>
   <DonationLink>https://www.paypal.com/donate/?hosted_button_id=FTA38UUZJ5QAN</DonationLink>
@@ -41,9 +44,83 @@ v2025.0120:
 
   <ModFolder Folder="No Change" ActiveWhen="UI_ID = 0" />
   <ModFolder Folder="UI" ActiveWhen="UI_ID = 1" />
-  
-<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 1-->
-  <ModFolder Folder="UI_Blue_Gradient" >
+
+<!-- ************************************
+*****************************************
+              START SCREEN
+*****************************************
+************************************* -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Start_ID equal 1 (Vanilla) -->
+  <ModFolder Folder="UI_Start\Vanilla" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Start_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Start_ID equal 2 (AxlRose) -->
+  <ModFolder Folder="UI_Start\AxlRose" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Start_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ************************************
+*****************************************
+                AVATARS
+*****************************************
+************************************* -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Avatars_ID equal 1 (JamesTheCat) -->
+  <ModFolder Folder="UI_Avatars\JamesTheCat" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Avatars_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Avatars_ID equal 2 (Vanilla) -->
+  <ModFolder Folder="UI_Avatars\Vanilla" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Avatars_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Avatars_ID equal 3 (AxlRose) -->
+  <ModFolder Folder="UI_Avatars\AxlRose" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Avatars_ID = 3</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ************************************
+*****************************************
+                THEMES
+*****************************************
+************************************* -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 1 (Blue_Gradient) -->
+  <ModFolder Folder="UI_Themes\Blue_Gradient" >
     <ActiveWhen>
       <And>
         <Option>UI_ID = 1</Option>
@@ -52,8 +129,9 @@ v2025.0120:
     </ActiveWhen>
   </ModFolder>
 
-<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 2-->
-  <ModFolder Folder="UI_FF9_Blue" >
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 2 (FF9_Blue) -->
+  <ModFolder Folder="UI_Themes\FF9_Blue" >
     <ActiveWhen>
       <And>
         <Option>UI_ID = 1</Option>
@@ -62,8 +140,9 @@ v2025.0120:
     </ActiveWhen>
   </ModFolder>
 
-<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 3-->
-  <ModFolder Folder="UI_FF9_Black" >
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 3 (FF9_Black)  -->
+  <ModFolder Folder="UI_Themes\FF9_Black" >
     <ActiveWhen>
       <And>
         <Option>UI_ID = 1</Option>
@@ -72,8 +151,9 @@ v2025.0120:
     </ActiveWhen>
   </ModFolder>
 
-<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 4-->
-  <ModFolder Folder="UI_FF8_Vanilla" >
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 4 (FF8_Vanilla)  -->
+  <ModFolder Folder="UI_Themes\FF8_Vanilla" >
     <ActiveWhen>
       <And>
         <Option>UI_ID = 1</Option>
@@ -82,6 +162,397 @@ v2025.0120:
     </ActiveWhen>
   </ModFolder>
 
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 5 (Purpur)  -->
+  <ModFolder Folder="UI_Themes\Purpur" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 5</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 6 (Light_Purple)  -->
+  <ModFolder Folder="UI_Themes\Light_Purple" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 6</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!-- ************************************
+*****************************************
+                CURSORS
+*****************************************
+************************************* -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 1 (Blue_Gradient)
+      AND UI_Cursor_ID equal 1 (Gunblade) -->
+  <ModFolder Folder="UI_Cursors\Blue_Gradient\Gunblade" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 1</Option>
+        <Option>UI_Cursor_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 1 (Blue_Gradient)
+      AND UI_Cursor_ID equal 2 (Hand) -->
+  <ModFolder Folder="UI_Cursors\Blue_Gradient\Hand" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 1</Option>
+        <Option>UI_Cursor_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 2 (FF9_Blue)
+      AND UI_Cursor_ID equal 1 (Gunblade) -->
+  <ModFolder Folder="UI_Cursors\FF9_Blue\Gunblade" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 2</Option>
+        <Option>UI_Cursor_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 2 (FF9_Blue)
+      AND UI_Cursor_ID equal 2 (Hand) -->
+  <ModFolder Folder="UI_Cursors\FF9_Blue\Hand" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 2</Option>
+        <Option>UI_Cursor_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 3 (FF9_Black)
+      AND UI_Cursor_ID equal 1 (Gunblade) -->
+  <ModFolder Folder="UI_Cursors\FF9_Black\Gunblade" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 3</Option>
+        <Option>UI_Cursor_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 3 (FF9_Black)
+      AND UI_Cursor_ID equal 2 (Hand) -->
+  <ModFolder Folder="UI_Cursors\FF9_Black\Hand" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 3</Option>
+        <Option>UI_Cursor_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 4 (FF8_Vanilla)
+      AND UI_Cursor_ID equal 1 (Gunblade) -->
+  <ModFolder Folder="UI_Cursors\FF8_Vanilla\Gunblade" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 4</Option>
+        <Option>UI_Cursor_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 4 (FF8_Vanilla)
+      AND UI_Cursor_ID equal 2 (Hand) -->
+  <ModFolder Folder="UI_Cursors\FF8_Vanilla\Hand" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 4</Option>
+        <Option>UI_Cursor_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 5 (Purpur)
+      AND UI_Cursor_ID equal 1 (Gunblade) -->
+  <ModFolder Folder="UI_Cursors\Purpur\Gunblade" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 5</Option>
+        <Option>UI_Cursor_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 5 (Purpur)
+      AND UI_Cursor_ID equal 2 (Hand) -->
+  <ModFolder Folder="UI_Cursors\Purpur\Hand" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 5</Option>
+        <Option>UI_Cursor_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 6 (Light_Purple)
+      AND UI_Cursor_ID equal 1 (Gunblade) -->
+  <ModFolder Folder="UI_Cursors\Light_Purple\Gunblade" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 6</Option>
+        <Option>UI_Cursor_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 6 (Light_Purple)
+      AND UI_Cursor_ID equal 2 (Hand) -->
+  <ModFolder Folder="UI_Cursors\Light_Purple\Hand" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 6</Option>
+        <Option>UI_Cursor_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ************************************
+*****************************************
+              CONTROLLERS
+*****************************************
+************************************* -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 1 (Blue_Gradient)
+      AND UI_Controller_ID equal 0 (Keyboard) or UI_Controller_ID equal 1 (psx) -->
+  <ModFolder Folder="UI_Controllers\Blue_Gradient\psx" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 1</Option>
+        <Or>
+          <Option>UI_Controller_ID = 0</Option>
+          <Option>UI_Controller_ID = 1</Option>
+        </Or>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 1 (Blue_Gradient)
+      AND UI_Controller_ID equal 2 (xbox) -->
+  <ModFolder Folder="UI_Controllers\Blue_Gradient\xbox" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 1</Option>
+        <Option>UI_Controller_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 2 (FF9_Blue)
+      AND UI_Controller_ID equal 0 (Keyboard) or UI_Controller_ID equal 1 (psx) -->
+  <ModFolder Folder="UI_Controllers\FF9_Blue\psx" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 2</Option>
+        <Or>
+          <Option>UI_Controller_ID = 0</Option>
+          <Option>UI_Controller_ID = 1</Option>
+        </Or>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 2 (FF9_Blue)
+      AND UI_Controller_ID equal 2 (xbox) -->
+  <ModFolder Folder="UI_Controllers\FF9_Blue\xbox" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 2</Option>
+        <Option>UI_Controller_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 3 (FF9_Black)
+      AND UI_Controller_ID equal 0 (Keyboard) or UI_Controller_ID equal 1 (psx) -->
+  <ModFolder Folder="UI_Controllers\FF9_Black\psx" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 3</Option>
+        <Or>
+          <Option>UI_Controller_ID = 0</Option>
+          <Option>UI_Controller_ID = 1</Option>
+        </Or>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 3 (FF9_Black)
+      AND UI_Controller_ID equal 2 (xbox) -->
+  <ModFolder Folder="UI_Controllers\FF9_Black\xbox" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 3</Option>
+        <Option>UI_Controller_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 4 (FF8_Vanilla)
+      AND UI_Controller_ID equal 0 (Keyboard) or UI_Controller_ID equal 1 (psx) -->
+  <ModFolder Folder="UI_Controllers\FF8_Vanilla\psx" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 4</Option>
+        <Or>
+          <Option>UI_Controller_ID = 0</Option>
+          <Option>UI_Controller_ID = 1</Option>
+        </Or>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 4 (FF8_Vanilla)
+      AND UI_Controller_ID equal 2 (xbox) -->
+  <ModFolder Folder="UI_Controllers\FF8_Vanilla\xbox" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 4</Option>
+        <Option>UI_Controller_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 5 (Purpur)
+      AND UI_Controller_ID equal 0 (Keyboard) or UI_Controller_ID equal 1 (psx) -->
+  <ModFolder Folder="UI_Controllers\Purpur\psx" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 5</Option>
+        <Or>
+          <Option>UI_Controller_ID = 0</Option>
+          <Option>UI_Controller_ID = 1</Option>
+        </Or>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 5 (Purpur)
+      AND UI_Controller_ID equal 2 (xbox) -->
+  <ModFolder Folder="UI_Controllers\Purpur\xbox" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 5</Option>
+        <Option>UI_Controller_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ================================ -->
+
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 6 (Light_Purple)
+      AND UI_Controller_ID equal 0 (Keyboard) or UI_Controller_ID equal 1 (psx) -->
+  <ModFolder Folder="UI_Controllers\Light_Purple\psx" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 6</Option>
+        <Or>
+          <Option>UI_Controller_ID = 0</Option>
+          <Option>UI_Controller_ID = 1</Option>
+        </Or>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+  
+<!--  The folder would be active if BOTH UI_ID equal 1 (On)
+      AND UI_Theme_ID equal 6 (Light_Purple)
+      AND UI_Controller_ID equal 2 (xbox) -->
+  <ModFolder Folder="UI_Controllers\Light_Purple\xbox" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 6</Option>
+        <Option>UI_Controller_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!-- ************************************
+*****************************************
+            CONFIGURATIONS
+*****************************************
+************************************* -->
+
+<!-- Field Backgrounds -->
   <ConfigOption>
     <Type>Bool</Type>
     <Default>1</Default>
@@ -92,6 +563,7 @@ v2025.0120:
     <Option Value="1" Name="On" PreviewFile="Preview\on.png"/>
   </ConfigOption>
 
+<!-- Field - Characters -->
   <ConfigOption>
     <Type>List</Type>
     <Default>2</Default>
@@ -103,6 +575,7 @@ v2025.0120:
     <Option Value="2" Name="2 - Low Poly models (Default)" PreviewFile="Preview\low_poly.jpg"/>
   </ConfigOption>
 
+<!-- UI -->
   <ConfigOption>
     <Type>Bool</Type>
     <Default>1</Default>
@@ -113,16 +586,73 @@ v2025.0120:
     <Option Value="1" Name="On" PreviewFile="Preview\on.png"/>
   </ConfigOption>
 
+<!-- UI - Start Screen -->
+  <ConfigOption>
+    <Type>List</Type>
+    <Default>2</Default>
+    <ID>UI_Start_ID</ID>
+    <Name>UI - Start Screen</Name>
+    <Description>UI - Start Screen (Maximize this Window)</Description>
+    <Option Value="1" Name="1. Vanilla" PreviewFile="Preview\UI_Start_OG.jpg"/>
+    <Option Value="2" Name="2. AxlRose (Default)" PreviewFile="Preview\UI_Start_Axl.jpg"/>
+  </ConfigOption>
+
+<!-- UI - Avatars -->
+  <ConfigOption>
+    <Type>List</Type>
+    <Default>3</Default>
+    <ID>UI_Avatars_ID</ID>
+    <Name>UI - Avatars</Name>
+    <Description>UI - Avatars (Maximize this Window)</Description>
+    <Option Value="1" Name="1. JamesTheCat" PreviewFile="Preview\UI_Avatars_JA.jpg"/>
+    <Option Value="2" Name="2. Vanilla" PreviewFile="Preview\UI_Avatars_OG.jpg"/>
+    <Option Value="3" Name="3. AxlRose (Default)" PreviewFile="Preview\UI_Avatars_AR.jpg"/>
+  </ConfigOption>
+
+<!-- UI - Themes -->
   <ConfigOption>
     <Type>List</Type>
     <Default>3</Default>
     <ID>UI_Theme_ID</ID>
-    <Name>UI Themes</Name>
-    <Description>UI Themes (Work in Progress)</Description>
-    <Option Value="1" Name="UI_Blue_Gradient" PreviewFile="Preview\UI_Blue_Gradient.jpg"/>
-    <Option Value="2" Name="UI_FF9_Blue" PreviewFile="Preview\UI_FF9_Blue.jpg"/>
-    <Option Value="3" Name="UI_FF9_Black (Default)" PreviewFile="Preview\UI_FF9_Black.jpg"/>
-    <Option Value="4" Name="UI_FF8_Vanilla" PreviewFile="Preview\UI_FF8_Vanilla.jpg"/>
+    <Name>UI - Themes</Name>
+    <Description>UI - Themes (Maximize this Window)</Description>
+    <Option Value="1" Name="1. Blue Gradient" PreviewFile="Preview\UI_Blue_Gradient.jpg"/>
+    <Option Value="2" Name="2. FF9 Blue" PreviewFile="Preview\UI_FF9_Blue.jpg"/>
+    <Option Value="3" Name="3. FF9 Black (Default)" PreviewFile="Preview\UI_FF9_Black.jpg"/>
+    <Option Value="4" Name="4. Vanilla" PreviewFile="Preview\UI_FF8_Vanilla.jpg"/>
+    <Option Value="5" Name="5. Purpur" PreviewFile="Preview\UI_FF8_Purpur.jpg"/>
+    <Option Value="6" Name="6. Light Purple" PreviewFile="Preview\UI_Light_Purple.jpg"/>
   </ConfigOption>
+
+<!-- UI - Cursors -->
+  <ConfigOption>
+    <Type>List</Type>
+    <Default>1</Default>
+    <ID>UI_Cursor_ID</ID>
+    <Name>UI - Cursors</Name>
+    <Description>UI - Cursors</Description>
+    <Option Value="1" Name="1. Gunblade (Default)" PreviewFile="Preview\UI_Gunblade.png"/>
+    <Option Value="2" Name="2. Hand" PreviewFile="Preview\UI_Hand.png"/>
+  </ConfigOption>
+
+<!-- UI - Game Controllers -->
+  <ConfigOption>
+    <Type>List</Type>
+    <Default>0</Default>
+    <ID>UI_Controller_ID</ID>
+    <Name>UI - Game Controllers</Name>
+    <Description>UI - Game Controllers (If no controller, defauls to keyboard icons)</Description>
+    <Option Value="0" Name="0. Off (Default)" PreviewFile="Preview\UI_Keyboard.jpg"/>
+    <Option Value="1" Name="1. Playstation" PreviewFile="Preview\UI_Playstation.jpg"/>
+    <Option Value="2" Name="2. XBox" PreviewFile="Preview\UI_XBox.jpg"/>
+  </ConfigOption>
+
+<!--  only mess with FFNx driver settings for gamepad icons if my UI is
+      enabled (UI_ID="1") otherwise don't  touch driver settings -->
+  <FFNxConfig>
+    <ff8_use_gamepad_icons UI_Controller_ID="0" UI_ID="1">false</ff8_use_gamepad_icons>
+    <ff8_use_gamepad_icons UI_Controller_ID="1" UI_ID="1">true</ff8_use_gamepad_icons>
+    <ff8_use_gamepad_icons UI_Controller_ID="2" UI_ID="1">true</ff8_use_gamepad_icons>
+  </FFNxConfig>
 
 </ModInfo>
