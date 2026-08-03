@@ -3,7 +3,7 @@
   <ID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ID>
   <Name>AxlRose&apos;s WIP (Incomplete)</Name>
   <Author>AxlRose</Author>
-  <Version>2025.0117</Version>
+  <Version>2025.0120</Version>
   <ReleaseDate>2025-01-12</ReleaseDate>
   <Category>Miscellaneous</Category>
   <Description>
@@ -12,10 +12,13 @@ mod's list and includes:
 
 - Few field upscaled backgrounds
 - Few field character textures
+- Enhanced UI and UI Themes
 - Other parts are coming soon
   </Description>
   <ReleaseNotes>
-v2025.0117:
+v2025.0120:
+  - Enhanced UI and UI Themes (UI_Blue_Gradient, UI_FF9_Blue, 
+    UI_FF9_Black, UI_FF8_Vanilla)
   - Field backgrounds: bghoke_3, bghoke_2, bgroad_6, 
     bgroom_1, bg2f_2 and bg2f_1 (Fixed)
   - Squall's d000 and d001 field model (low and high poly model)
@@ -24,12 +27,60 @@ v2025.0117:
   <DonationLink>https://www.paypal.com/donate/?hosted_button_id=FTA38UUZJ5QAN</DonationLink>
   <PreviewFile>Preview\preview.png</PreviewFile>
 
+  <!--This mod FORBIDS that any version of the modID specified is activated-->
+  <Compatibility>
+    <Forbid ModID="44a6896d-96ce-493f-bbb3-35bd29dcf205">Menu +</Forbid>
+  </Compatibility>
+
   <ModFolder Folder="No Change" ActiveWhen="FIELDSA_ID = 0" />
   <ModFolder Folder="FIELD_BG" ActiveWhen="FIELDSA_ID = 1" />
 
   <ModFolder Folder="No Change" ActiveWhen="POLY_ID = 0" />
   <ModFolder Folder="FIELD_MODELS\HIGH_POLY" ActiveWhen="POLY_ID = 1" />
   <ModFolder Folder="FIELD_MODELS\LOW_POLY" ActiveWhen="POLY_ID = 2" />
+
+  <ModFolder Folder="No Change" ActiveWhen="UI_ID = 0" />
+  <ModFolder Folder="UI" ActiveWhen="UI_ID = 1" />
+  
+<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 1-->
+  <ModFolder Folder="UI_Blue_Gradient" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 1</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 2-->
+  <ModFolder Folder="UI_FF9_Blue" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 2</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 3-->
+  <ModFolder Folder="UI_FF9_Black" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 3</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
+
+<!--The folder would be active if BOTH UI_ID equal 1 AND UI_Theme_ID equal 4-->
+  <ModFolder Folder="UI_FF8_Vanilla" >
+    <ActiveWhen>
+      <And>
+        <Option>UI_ID = 1</Option>
+        <Option>UI_Theme_ID = 4</Option>
+      </And>
+    </ActiveWhen>
+  </ModFolder>
 
   <ConfigOption>
     <Type>Bool</Type>
@@ -50,6 +101,28 @@ v2025.0117:
     <Option Value="0" Name="0 - Off" PreviewFile="Preview\off.png"/>
     <Option Value="1" Name="1 - High Poly models [Not recommend yet]" PreviewFile="Preview\high_poly.jpg"/>
     <Option Value="2" Name="2 - Low Poly models (Default)" PreviewFile="Preview\low_poly.jpg"/>
+  </ConfigOption>
+
+  <ConfigOption>
+    <Type>Bool</Type>
+    <Default>1</Default>
+    <ID>UI_ID</ID>
+    <Name>UI</Name>
+    <Description>Enhanced UI (Work in Progress)</Description>
+    <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
+    <Option Value="1" Name="On" PreviewFile="Preview\on.png"/>
+  </ConfigOption>
+
+  <ConfigOption>
+    <Type>List</Type>
+    <Default>3</Default>
+    <ID>UI_Theme_ID</ID>
+    <Name>UI Themes</Name>
+    <Description>UI Themes (Work in Progress)</Description>
+    <Option Value="1" Name="UI_Blue_Gradient" PreviewFile="Preview\UI_Blue_Gradient.jpg"/>
+    <Option Value="2" Name="UI_FF9_Blue" PreviewFile="Preview\UI_FF9_Blue.jpg"/>
+    <Option Value="3" Name="UI_FF9_Black (Default)" PreviewFile="Preview\UI_FF9_Black.jpg"/>
+    <Option Value="4" Name="UI_FF8_Vanilla" PreviewFile="Preview\UI_FF8_Vanilla.jpg"/>
   </ConfigOption>
 
 </ModInfo>

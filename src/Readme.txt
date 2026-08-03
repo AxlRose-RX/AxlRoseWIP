@@ -11,6 +11,9 @@
 **  Other parts are coming soon
 ********************************************************
 
+v2025.0120:
+  - Enhanced UI and themes (UI_Blue_Gradient, UI_FF9_Blue, UI_FF9_Black, UI_FF8_Vanilla)
+
 v2025.0117:
   - Field: bg2f_1 (Fixed)
 
