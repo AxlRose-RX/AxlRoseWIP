@@ -2,7 +2,7 @@
 
 <!-- INTRO:START -->
 <p align="center">
-  <img src="preview/preview_v2026.0326.png" alt="AxlRose's WIP (Incomplete)">
+  <img src="preview/preview_v2026.0329.png" alt="AxlRose's WIP (Incomplete)">
 </p>
 
 Work in Progress mod (manually set at the top of list)
@@ -10,10 +10,10 @@ Work in Progress mod (manually set at the top of list)
 - Few field upscaled backgrounds and field character textures
 - Enhanced UI and Themes plus tons of new stuff
 
-## Latest release: v2026.0326
+## Latest release: v2026.0329
 
 ```
-v2026.0326 > FIELD BACKGROUNDS!:
+v2026.0329 > FIELD BACKGROUNDS!:
       - 4x Upscales: 80/950
       - Custom: 20/950
   UI:
