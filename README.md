@@ -2,7 +2,7 @@
 
 <!-- INTRO:START -->
 <p align="center">
-  <img src="preview/preview_v2025.1201.png" alt="AxlRose's WIP (Incomplete)">
+  <img src="preview/preview_v2026.0326.png" alt="AxlRose's WIP (Incomplete)">
 </p>
 
 Work in Progress mod (manually set at the top of list)
@@ -10,15 +10,12 @@ Work in Progress mod (manually set at the top of list)
 - Few field upscaled backgrounds and field character textures
 - Enhanced UI and Themes plus tons of new stuff
 
-## Latest release: v2025.1201
+## Latest release: v2026.0326
 
 ```
-v2025.1201 > FIELD BACKGROUNDS!:
-      - Developing an app to automate the vectorization of clean layer masks for cutting
-      the field background textures to then import them into the game. The result: 14
-      custom upscales (some 6x, some 8x) ready - 11 from Balamb Garden and 3 from Ifrit's
-      Cave - plus 40 4x faithful upscaled backgrounds including the whole Balamb Town and
-      Ifrit's Cave.
+v2026.0326 > FIELD BACKGROUNDS!:
+      - 4x Upscales: 80/950
+      - Custom: 20/950
   UI:
       - Replaced Remaster fonts with perfect monospaced fonts - New Avatar pack options
       (JamesTheCat and AxlRose) - New Start Screen options (AxlRose or Vanilla) - New cursor
