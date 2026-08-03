@@ -3,26 +3,26 @@
   <ID>7cc32d70-5024-4bf0-a7f8-a7c583b54f9c</ID>
   <Name>AxlRose&apos;s WIP &#40;Incomplete&#41;</Name>
   <Author>AxlRose</Author>
-  <Version>2026.0329</Version>
+  <Version>2026.0705</Version>
   <ReleaseDate>2025-01-12</ReleaseDate>
   <Category>Miscellaneous</Category>
   <Description> Work in Progress mod &#40;manually set at the top of list&#41;
         &#45; Few field upscaled backgrounds and field character textures
         &#45; Enhanced UI and Themes plus tons of new stuff
   </Description>
-  <ReleaseNotes>  v2026.0329 &gt; FIELD BACKGROUNDS!&#58;
-      &#45; 4x Upscales&#58; 80&#47;950
-      &#45; Custom&#58; 20&#47;950
+  <ReleaseNotes>  v2026.0705 &gt; FIELD BACKGROUNDS!&#58;
+      &#45; 4x Upscales&#58; 157&#47;877 &#40;Balamb Garden COMPLETE&#41;
+      &#45; Custom&#58; 20&#47;877
+      
   UI&#58;
       &#45; Replaced Remaster fonts with perfect monospaced fonts &#45; New Avatar pack options 
       &#40;JamesTheCat and AxlRose&#41; &#45; New Start Screen options &#40;AxlRose or Vanilla&#41; &#45; New cursor
       options &#40;Gunblade or Hand&#41; &#45; New option for controller buttons &#40;Keyboard, PlayStation
       or XBox&#41; &#45; Enhanced UI and Themes&#58; Blue Gradient, FF9 Blue, FF9 Black, Vanilla, Purpur
       and Light Purple are NEW
+      
   Field character models&#58;
-      &#45; Squall&apos;s d000 and d001 field model &#40;low/high poly model&#41; but then removed 
-      the High Poly field models &#40;until fully supported by the engine to prevent crashes
-      and artifacts&#41;
+      &#45; Squall&apos;s d000 and d001 field model &#40;low/high poly model&#41;
   </ReleaseNotes>
   <Link>https://discord.com/invite/7Rsvsewghz</Link>
   <DonationLink>https://www.paypal.com/donate/?hosted_button_id=FTA38UUZJ5QAN</DonationLink>
@@ -636,10 +636,10 @@
 <!-- Field Backgrounds - Custom -->
   <ConfigOption>
     <Type>Bool</Type>
-    <Default>1</Default>
+    <Default>0</Default>
     <ID>FIELDSA_ID</ID>
     <Name>Field - Custom Backgrounds</Name>
-    <Description>Custom 6x and higher upscale Field backgrounds (Work in Progress)</Description>
+    <Description>Custom 6x and higher upscale Field backgrounds</Description>
     <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
     <Option Value="1" Name="On" PreviewFile="Preview\field_bg_custom.png"/>
   </ConfigOption>
@@ -649,8 +649,8 @@
     <Type>Bool</Type>
     <Default>1</Default>
     <ID>FIELDS4X_ID</ID>
-    <Name>Field - 4x SHARP Upscale Backgrounds</Name>
-    <Description>4x faithful SHARP upscale Field backgrounds (Work in Progress)</Description>
+    <Name>Field - 4x Upscale Backgrounds</Name>
+    <Description>4x faithful upscale Field backgrounds (Maximize this Window)</Description>
     <Option Value="0" Name="Off" PreviewFile="Preview\off.png"/>
     <Option Value="1" Name="On" PreviewFile="Preview\field_bg_sharp.png"/>
   </ConfigOption>
@@ -704,15 +704,15 @@
 <!-- UI - Themes -->
   <ConfigOption>
     <Type>List</Type>
-    <Default>5</Default>
+    <Default>4</Default>
     <ID>UI_Theme_ID</ID>
     <Name>UI - Themes</Name>
     <Description>UI - Themes (Maximize this Window)</Description>
     <Option Value="1" Name="1. Blue Gradient" PreviewFile="Preview\UI_Blue_Gradient.jpg"/>
     <Option Value="2" Name="2. FF9 Blue" PreviewFile="Preview\UI_FF9_Blue.jpg"/>
     <Option Value="3" Name="3. FF9 Black" PreviewFile="Preview\UI_FF9_Black.jpg"/>
-    <Option Value="4" Name="4. Vanilla" PreviewFile="Preview\UI_FF8_Vanilla.jpg"/>
-    <Option Value="5" Name="5. Purpur (Default)" PreviewFile="Preview\UI_FF8_Purpur.jpg"/>
+    <Option Value="4" Name="4. Vanilla Upscale (Default)" PreviewFile="Preview\UI_FF8_Vanilla.jpg"/>
+    <Option Value="5" Name="5. Purpur" PreviewFile="Preview\UI_FF8_Purpur.jpg"/>
     <Option Value="6" Name="6. Light Purple" PreviewFile="Preview\UI_Light_Purple.jpg"/>
   </ConfigOption>
 

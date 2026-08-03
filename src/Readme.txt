@@ -12,6 +12,12 @@
 **  Other parts are coming soon
 ********************************************************
 
+v2026.0705:
+
+  FIELD BACKGROUNDS:
+  
+  - 4x Upscales: 157/877 (Balamb Garden COMPLETE!)
+
 v2026.0329:
 
   - Minor clean up
